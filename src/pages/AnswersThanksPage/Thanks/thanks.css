@@ -1,0 +1,19 @@
+.thanks{
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.thanks__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thanks .title{
+    text-transform: uppercase;
+}
+.thanks .title__small{
+    margin: 28px 51px;
+    color: #F1F1F1;
+}

@@ -1,0 +1,42 @@
+.office{
+    padding: 40px 0;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.office__content{
+    display: flex;
+    background: #F1F1F1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+    column-gap: 40px;
+}
+.office__left{
+    padding: 40px 0 93px 40px;
+}
+.office__subtitle{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B2639;
+}
+.office__subtitle-blue{
+    color: #2194FF;
+    font-weight: 700;
+}
+.office__map{
+    width: 570px;
+    height: 488px;
+    border-radius: 33px;
+    border: 0;
+}
+.border{
+    margin: 16px 0 31px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(27, 38, 57, 0.2);;
+}
+.office__subtitle-margin{
+    margin-bottom: 45px;
+}

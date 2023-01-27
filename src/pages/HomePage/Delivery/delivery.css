@@ -1,0 +1,49 @@
+.delivery{
+    background-color: #222222;
+    padding: 165px 0 75px;
+}
+.delivery__content{
+    position: relative;
+}
+.delivery__content:before{
+    content: url("../../../assets/delivery/truck.png");
+    position: absolute;
+    right: -94px;
+    bottom: -29px;
+}
+.delivery__time{
+    display: flex;
+    column-gap: 34px;
+}
+.delivery__time-top{
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 9px;
+}
+.delivery__title{
+    font-size: 64px;
+    line-height: 63px;
+    margin: 12px 0 14px;
+}
+.delivery__subtitle{
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F1F1F1;
+    position: relative;
+}
+.delivery__subtitle:before{
+    content: url("../../../assets/delivery/arrow2.png");
+    position: absolute;
+    left: 305px;
+    top: -6px;
+}
+.delivery__desc{
+    font-weight: 600;
+}
+.delivery .btn{
+    margin: 40px 0 13px;
+}
+.margin{
+    margin-bottom: 11px;
+}

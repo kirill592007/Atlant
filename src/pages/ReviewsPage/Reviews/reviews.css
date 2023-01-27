@@ -1,0 +1,39 @@
+.reviews{
+    background-color: #222222;
+    padding: 173px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__content{
+    display: flex;
+    column-gap: 23px;
+    padding: 40px;
+    background-color: #F1F1F1;
+    width: 760px;
+    border-radius: 40px;
+}
+.reviews__subtitle{
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D2D2D;
+    margin: 4px 0 15px;
+}
+.reviews .subtitle{
+    color: #2D2D2D;
+}
+.reviews .modal__content{
+    width: 40%;
+}
+.reviews .modal__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews .btn{
+    width: 60%;
+}
+.cross{
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-arrow {
+    right: -100px;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.arrow:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.left-arrow {
+    left: -100px;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
