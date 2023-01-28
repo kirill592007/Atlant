@@ -3,7 +3,7 @@
     padding: 20px 0;
     position: fixed;
     width: 100vw;
-    z-index: 2;
+    z-index: 99;
 }
 .header__navbar{
     display: flex;

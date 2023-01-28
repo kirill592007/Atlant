@@ -20,6 +20,11 @@
     color: #2D2D2D;
     margin: 4px 0 15px;
 }
+.reviews__photo{
+    width: 217px;
+    height: 259px;
+    border-radius: 19px;
+}
 .reviews .subtitle{
     color: #2D2D2D;
 }

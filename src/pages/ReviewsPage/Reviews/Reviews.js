@@ -15,13 +15,15 @@ const Reviews = () => {
     const addComment = (e) => {
         e.preventDefault()
         axios.post('http://localhost:8080/swiper', {
-            photo: "./reviews/photo.png",
-            name: "Ольга И.",
-            town: "Красногорск",
-            subtitle: e.target[0].value
+            photo: "./reviews/gray man.png",
+            name: e.target[0].value,
+            town: e.target[1].value,
+            subtitle: e.target[2].value
         })
             .then((res) => console.log(res))
         e.target[0].value = ''
+        e.target[1].value = ''
+        e.target[2].value = ''
         setModal(0)
         setMesaage(message + 1)
     }
@@ -39,7 +41,9 @@ const Reviews = () => {
                            </div>
                            <div className="modal__bottom">
                                <form onSubmit={addComment} className="modal__form">
-                                   <input type="text" className="input" placeholder="Ваш Отзыв"/>
+                                   <input type="text" required className="input" placeholder="Имя"/>
+                                   <input type="text" required className="input" placeholder="Город"/>
+                                   <input type="text" required className="input" placeholder="Ваш Отзыв"/>
                                    <button className="btn">Отправить</button>
                                </form>
                            </div>

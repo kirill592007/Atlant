@@ -30,7 +30,7 @@ const Slider = ({message}) => {
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
                         {index === current && (
                             <div key={slide.id} className="reviews__content">
-                                <img src={slide.photo} alt=""/>
+                                <img className="reviews__photo" src={slide.photo} alt=""/>
                                 <div className="reviews__text">
                                     <h3 className="title title__small">{slide.name}</h3>
                                     <p className="reviews__subtitle">{slide.town}</p>

@@ -1,8 +1,13 @@
 import React  from 'react';
 import cross from '../../../assets/modal/cross.svg'
 import './modal.css'
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 const Modal = () => {
+    const navigate = useNavigate()
+    const redirect = (e) => {
+        e.preventDefault()
+        navigate('/')
+    }
     return (
         <section className="modal">
             <div className="modal__content">
@@ -11,10 +16,10 @@ const Modal = () => {
                     <NavLink to="/"><img src={cross} alt=""/></NavLink>
                 </div>
                 <div className="modal__bottom">
-                    <form action="" className="modal__form">
-                        <input className="input" type="text" placeholder="Имя"/>
-                        <input className="input" type="number" placeholder="Телефон"/>
-                        <NavLink to="/"><button className="btn">Заказать доставку газа</button></NavLink>
+                    <form onSubmit={redirect} className="modal__form">
+                        <input required className="input" type="text" placeholder="Имя"/>
+                        <input required className="input" type="number" placeholder="Телефон"/>
+                        <button className="btn">Заказать доставку газа</button>
                     </form>
                 </div>
             </div>
